@@ -69,34 +69,6 @@ In this example, we are simply accepting the newest value provided by the user a
 This would accept user input but truncate the value to the first 140 characters.
 
 
-## Uncontrolled Components
-
-An `<input>` that does not supply a `value` (or sets it to `null`) is an *uncontrolled* component. In an uncontrolled `<input>`, the value of the rendered element will reflect the user's input. For example:
-
-```javascript
-  render: function() {
-    return <input type="text" />;
-  }
-```
-
-This will render an input that starts off with an empty value. Any user input will be immediately reflected by the rendered element. If you wanted to listen to updates to the value, you could use the `onChange` event just like you can with controlled components.
-
-If you want to initialize the component with a non-empty value, you can supply a `defaultValue` prop. For example:
-
-```javascript
-  render: function() {
-    return <input type="text" defaultValue="Hello!" />;
-  }
-```
-
-This example will function much like the **Controlled Components** example above.
-
-Likewise, `<input>` supports `defaultChecked` and `<select>` supports `defaultValue`.
-
-
-## Advanced Topics
-
-
 ### Why Controlled Components?
 
 Using form components such as `<input>` in React presents a challenge that is absent when writing traditional form HTML. For example, in HTML:
@@ -117,6 +89,94 @@ Unlike HTML, React components must represent the state of the view at any point 
 
 Since this method describes the view at any point in time, the value of the text input should *always* be `Untitled`.
 
+## Uncontrolled Components (not recommended)
+
+An `<input>` that does not supply a `value` (or sets it to `null`) is an *uncontrolled* component. In an uncontrolled `<input>`, the value of the rendered element will reflect the user's input. For example:
+
+```javascript
+  render: function() {
+    return <input type="text" />;
+  }
+```
+
+This will render an input that starts off with an empty value. Any user input will be immediately reflected by the rendered element. If you wanted to listen to updates to the value, you could use the `onChange` event just like you can with controlled components.
+
+If you want to initialize the component with a non-empty value, you can supply a `defaultValue` prop. For example:
+
+```javascript
+  render: function() {
+    return <input type="text" defaultValue="Hello!" />;
+  }
+```
+
+This example will function much like the **Controlled Components** example above. 
+
+Likewise, `<input>` supports `defaultChecked` and `<select>` supports `defaultValue`.
+
+### Why Uncontrolled Components?
+
+The power and cost of controlled components is that you render every time a change occurs, and you always have the latest values in render (via state or props). 
+
+Most of the time the performance cost is negligible, however in large forms you can trade the simplicity for finer control over when a render happens.
+
+When using uncontrolled components you must manually read and update values as needed.
+
+### Updates with Uncontrolled Components
+
+There are cases where you initially expect a certain result while using uncontrolled components, but the actual behavior is different.
+
+When using `defaultValue` with data from `this.state`, only the initial state is shown. Even if you call `this.setState`, for example after an AJAX request completes, the input's value won't change.
+
+```javascript
+  getInitialState: function(){
+    return {text: ''}
+  },
+  render: function() {
+    return <input type="text" defaultValue={this.state.text} />;
+  },
+  componentDidMount(){
+    // ...
+  }
+```
+
+Lists of elements without proper keys can cause confusing results. In this example we're using the index as a key, yet we remove an item other than the last from the array.
+
+```javascript
+  render: function() {
+    return (
+      <div>
+        {this.props.values.map(function(value, index){
+          return <input defaultValue={value} key={index} type="text" />;
+        })}
+      </div>
+    );
+  }
+```
+
+If on the first render `this.props.values` is `['first', 'second']`, the resulting html:
+
+```html
+<div>
+  // from <input defaultValue="first" key={0} type="text" />
+  <input value="first">
+
+  // from <input defaultValue="second" key={1} type="text"/>
+  <input value="second">
+</div>
+```
+
+When `this.props.values` becomes `['second']`: React will remove the input at index 1, and leave the first input untouched.
+
+```html
+<div>
+  // from <input defaultValue="second" key={0} />
+  <input value="first">
+</div>
+```
+
+Using incorrect keys with controlled components only results in performance loss, but it will behave predictably here by rendering `<input value="second">`.
+
+## Advanced Topics
 
 ### Why Textarea Value?
 
