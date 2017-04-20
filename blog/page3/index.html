@@ -1,61 +1,74 @@
+
+
 <!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>React | Blog</title>
-  <meta name="viewport" content="width=device-width">
-  <meta property="og:title" content="React | Blog" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://facebook.github.io/react/blog/page3/index.html" />
-  <meta property="og:image" content="http://facebook.github.io/react/img/logo_og.png" />
-  <meta property="og:description" content="A JavaScript library for building user interfaces" />
-  <meta property="fb:app_id" content="623268441017527" />
+  <title>Blog - React</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Blog - React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://facebook.github.io/react/blog/page3/">
+  <meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
+  <meta property="og:description" content="A JavaScript library for building user interfaces">
+  <meta property="fb:app_id" content="623268441017527">
 
   <link rel="shortcut icon" href="/react/favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="React" href="http://facebook.github.io/react/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="React" href="https://facebook.github.io/react/feed.xml">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
   <link rel="stylesheet" href="/react/css/syntax.css">
   <link rel="stylesheet" href="/react/css/codemirror.css">
   <link rel="stylesheet" href="/react/css/react.css">
 
-  <script type="text/javascript" src="//use.typekit.net/vqa1hcx.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="//use.typekit.net/vqa1hcx.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
   <!--[if lte IE 8]>
-  <script type="text/javascript" src="/react/js/html5shiv.min.js"></script>
-  <script type="text/javascript" src="/react/js/es5-shim.min.js"></script>
-  <script type="text/javascript" src="/react/js/es5-sham.min.js"></script>
+  <script src="/react/js/html5shiv.min.js"></script>
+  <script src="/react/js/es5-shim.min.js"></script>
+  <script src="/react/js/es5-sham.min.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="/react/js/codemirror.js"></script>
-  <script type="text/javascript" src="/react/js/javascript.js"></script>
-  <script type="text/javascript" src="/react/js/react.min.js"></script>
-  <script type="text/javascript" src="/react/js/JSXTransformer.js"></script>
-  <script type="text/javascript" src="/react/js/live_editor.js"></script>
-  <script type="text/javascript" src="/react/js/showdown.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script src="/react/js/codemirror.js"></script>
+  <script src="/react/js/javascript.js"></script>
+  <script src="/react/js/xml.js"></script>
+  <script src="/react/js/jsx.js"></script>
+  <script src="/react/js/react.js"></script>
+  <script src="/react/js/react-dom.js"></script>
+  <script src="/react/js/babel.min.js"></script>
+  <script src="/react/js/live_editor.js"></script>
 </head>
 <body>
 
   <div class="container">
 
     <div class="nav-main">
-      <div class="wrap">
-        <a class="nav-home" href="/react/index.html">
-          <img class="nav-logo" alt="" src="/react/img/logo_small.png" width="38" height="38">
-          React
-        </a>
-        <ul class="nav-site">
-          <li><a href="/react/docs/getting-started.html">docs</a></li>
-          <li><a href="/react/support.html">support</a></li>
-          <li><a href="/react/downloads.html">download</a></li>
-          <li><a href="/react/blog/" class="active">blog</a></li>
-          <li><a href="http://github.com/facebook/react">github</a>
-        </ul>
-      </div>
+  <div class="wrap">
+    <a class="nav-home" href="/react/">
+      <img class="nav-logo" src="/react/img/logo.svg" width="36" height="36">
+      React
+    </a>
+    <div class="nav-lists">
+      <ul class="nav-site nav-site-internal">
+        <li><a href="/react/docs/hello-world.html">Docs</a></li>
+        <li><a href="/react/tutorial/tutorial.html">Tutorial</a></li>
+        <li><a href="/react/community/support.html">Community</a></li>
+        <li><a href="/react/blog/" class="active">Blog</a></li>
+        <li class="nav-site-search">
+          <input id="algolia-doc-search" type="text" placeholder="Search docs..." />
+        </li>
+      </ul>
+      <ul class="nav-site nav-site-external">
+        <li><a href="https://github.com/facebook/react">GitHub</a></li>
+        <li><a href="https://github.com/facebook/react/releases">v15.4.0</a></li>
+      </ul>
     </div>
+  </div>
+</div>
 
-    
 
     <section class="content wrap blogContent">
   <div class="nav-docs nav-blog">
@@ -63,25 +76,25 @@
     <h3>Recent posts</h3>
     <ul>
       
-        <li><a href="/react/blog/2014/02/20/react-v0.9.html">React v0.9</a></li>
+        <li><a href="/react/blog/2017/04/07/react-v15.5.0.html">React v15.5.0</a></li>
       
-        <li><a href="/react/blog/2014/02/16/react-v0.9-rc1.html">React v0.9 RC</a></li>
+        <li><a href="/react/blog/2016/11/16/react-v15.4.0.html">React v15.4.0</a></li>
       
-        <li><a href="/react/blog/2014/02/15/community-roundup-16.html">Community Round-up #16</a></li>
+        <li><a href="/react/blog/2016/09/28/our-first-50000-stars.html">Our First 50,000 Stars</a></li>
       
-        <li><a href="/react/blog/2014/02/05/community-roundup-15.html">Community Round-up #15</a></li>
+        <li><a href="/react/blog/2016/08/05/relay-state-of-the-state.html">Relay: State of the State</a></li>
       
-        <li><a href="/react/blog/2014/01/06/community-roundup-14.html">Community Round-up #14</a></li>
+        <li><a href="/react/blog/2016/07/22/create-apps-with-no-configuration.html">Create Apps with No Configuration</a></li>
       
-        <li><a href="/react/blog/2014/01/02/react-chrome-developer-tools.html">React Chrome Developer Tools</a></li>
+        <li><a href="/react/blog/2016/07/13/mixins-considered-harmful.html">Mixins Considered Harmful</a></li>
       
-        <li><a href="/react/blog/2013/12/30/community-roundup-13.html">Community Round-up #13</a></li>
+        <li><a href="/react/blog/2016/07/11/introducing-reacts-error-code-system.html">Introducing React's Error Code System</a></li>
       
-        <li><a href="/react/blog/2013/12/23/community-roundup-12.html">Community Round-up #12</a></li>
+        <li><a href="/react/blog/2016/04/08/react-v15.0.1.html">React v15.0.1</a></li>
       
-        <li><a href="/react/blog/2013/12/19/react-v0.8.0.html">React v0.8</a></li>
+        <li><a href="/react/blog/2016/04/07/react-v15.html">React v15.0</a></li>
       
-        <li><a href="/react/blog/2013/12/18/react-v0.5.2-v0.4.2.html">React v0.5.2, v0.4.2</a></li>
+        <li><a href="/react/blog/2016/03/29/react-v0.14.8.html">React v0.14.8</a></li>
       
       <li><a href="/react/blog/all.html">All posts ...</a></li>
     </ul>
@@ -91,422 +104,397 @@
   <div class="inner-content">
     
       <div class="post-list-item">
-        <h1><a href="/react/blog/2013/11/18/community-roundup-11.html">Community Round-up #11</a></h1>
-        <p class="meta">November 18, 2013 by Vjeux</p>
-        <hr />
-        <div class="post">
-         <p>This round-up is the proof that React has taken off from its Facebook&#39;s root: it features three in-depth presentations of React done by external people. This is awesome, keep them coming!</p>
-<h2><a class="anchor" name="super-vanjs-2013-talk"></a>Super VanJS 2013 Talk <a class="hash-link" href="#super-vanjs-2013-talk">#</a></h2>
-<p><a href="https://github.com/steveluscher">Steve Luscher</a> working at <a href="https://leanpub.com/">LeanPub</a> made a 30 min talk at <a href="https://twitter.com/vanjs">Super VanJS</a>. He does a remarkable job at explaining why React is so fast with very exciting demos using the HTML5 Audio API.</p>
+        
 
-<figure><iframe width="600" height="338" src="//www.youtube.com/embed/1OeXsL5mr4g" frameborder="0" allowfullscreen></iframe></figure>
-<h2><a class="anchor" name="react-tips"></a>React Tips <a class="hash-link" href="#react-tips">#</a></h2>
-<p><a href="http://connormcsheffrey.com/">Connor McSheffrey</a> and <a href="https://github.com/chenglou">Cheng Lou</a> added a new section to the documentation. It&#39;s a list of small tips that you will probably find useful while working on React. Since each article is very small and focused, we <a href="http://facebook.github.io/react/tips/introduction.html">encourage you to contribute</a>!</p>
+<h1>
+
+  <a href="/react/blog/2016/03/16/react-v15-rc2.html">React v15.0 Release Candidate 2</a>
+
+</h1>
+
+<p class="meta">
+  March 16, 2016
+  by
+  
+    
+      <a href="https://twitter.com/zpao">Paul O’Shannessy</a>
+    
+    
+  
+</p>
+
+<hr>
+
+<div class="post">
+  <p>Today we&#39;re releasing a second release candidate for version 15. Primarily this is to address 2 issues, but we also picked up a few small changes from new contributors, including some improvements to some of our new warnings.</p>
+
+<p>The most pressing change that was made is to fix a bug in our new code that removes <code>&lt;span&gt;</code>s, as discussed in the original RC1 post. Specifically we have some code that takes a different path in IE11 and Edge due to the speed of some DOM operations. There was a bug in this code which didn&#39;t break out of the optimization for <code>DocumentFragment</code>s, resulting in text not appearing at all. Thanks to the several people who <a href="https://github.com/facebook/react/issues/6246">reported this</a>.</p>
+
+<p>The other change is to our SVG code. In RC1 we had made the decision to pass through all attributes directly. This led to <a href="https://github.com/facebook/react/issues/6211">some confusion with <code>class</code> vs <code>className</code></a> and ultimately led us to reconsider our position on the approach. Passing through all attributes meant that we would have two different patterns for using React where things like hyphenated attributes would work for SVG but not HTML. In the future, we <em>might</em> change our approach to the problem for HTML as well but in the meantime, maintaining consistency is important. So we reverted the changes that allowed the attributes to be passed through and instead expanded the SVG property list to include all attributes that are in the spec. We believe we have everything now but definitely <a href="https://github.com/facebook/react/issues/1657#issuecomment-197031403">let us know</a> if we missed anything. It was and still is our intent to support the full range of SVG tags and attributes in this release.</p>
+
+<p>Thanks again to everybody who has tried the RC1 and reported issues. It has been extremely important and we wouldn&#39;t be able to do this without your help!</p>
+
+<h2>Installation</h2>
+
+<p>We recommend using React from <code>npm</code> and using a tool like browserify or webpack to build your code into a single bundle. To install the two packages:</p>
 
 <ul>
-<li><a href="http://facebook.github.io/react/tips/inline-styles.html">Inline Styles</a></li>
-<li><a href="http://facebook.github.io/react/tips/if-else-in-JSX.html">If-Else in JSX</a></li>
-<li><a href="http://facebook.github.io/react/tips/self-closing-tag.html">Self-Closing Tag</a></li>
-<li><a href="http://facebook.github.io/react/tips/maximum-number-of-jsx-root-nodes.html">Maximum Number of JSX Root Nodes</a></li>
-<li><a href="http://facebook.github.io/react/tips/style-props-value-px.html">Shorthand for Specifying Pixel Values in style props</a></li>
-<li><a href="http://facebook.github.io/react/tips/children-props-type.html">Type of the Children props</a></li>
-<li><a href="http://facebook.github.io/react/tips/controlled-input-null-value.html">Value of null for Controlled Input</a></li>
-<li><a href="http://facebook.github.io/react/tips/componentWillReceiveProps-not-triggered-after-mounting.html"><code>componentWillReceiveProps</code> Not Triggered After Mounting</a></li>
-<li><a href="http://facebook.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html">Props in getInitialState Is an Anti-Pattern</a></li>
-<li><a href="http://facebook.github.io/react/tips/dom-event-listeners.html">DOM Event Listeners in a Component</a></li>
-<li><a href="http://facebook.github.io/react/tips/initial-ajax.html">Load Initial Data via AJAX</a></li>
-<li><a href="http://facebook.github.io/react/tips/false-in-jsx.html">False in JSX</a></li>
+<li><code>npm install --save react@15.0.0-rc.2 react-dom@15.0.0-rc.2</code></li>
 </ul>
-<h2><a class="anchor" name="intro-to-the-react-framework"></a>Intro to the React Framework <a class="hash-link" href="#intro-to-the-react-framework">#</a></h2>
-<p><a href="http://blog.pixelingene.com/">Pavan Podila</a> wrote an in-depth introduction to React on TutsPlus. This is definitively worth reading.</p>
 
-<blockquote>
-<p>Within a component-tree, data should always flow down. A parent-component should set the props of a child-component to pass any data from the parent to the child. This is termed as the Owner-Owned pair. On the other hand user-events (mouse, keyboard, touches) will always bubble up from the child all the way to the root component, unless handled in between.
-<figure><a href="http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660"><img src="/react/img/blog/tutsplus.png" alt=""></a></figure></p>
+<p>Remember that by default, React runs extra checks and provides helpful warnings in development mode. When deploying your app, set the <code>NODE_ENV</code> environment variable to <code>production</code> to use the production build of React which does not include the development warnings and runs significantly faster.</p>
 
-<p><a href="http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660">Read the full article ...</a></p>
-</blockquote>
-<h2><a class="anchor" name="140-characters-textarea"></a>140-characters textarea <a class="hash-link" href="#140-characters-textarea">#</a></h2>
-<p><a href="https://github.com/brainkim">Brian Kim</a> wrote a small textarea component that gradually turns red as you reach the 140-characters limit. Because he only changes the background color, React is smart enough not to mess with the text selection.</p>
+<p>If you can’t use <code>npm</code> yet, we provide pre-built browser builds for your convenience, which are also available in the <code>react</code> package on bower.</p>
 
-<p data-height="178" data-theme-id="0" data-slug-hash="FECGb" data-user="brainkim" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/brainkim/pen/FECGb'>FECGb</a> by Brian Kim (<a href='http://codepen.io/brainkim'>@brainkim</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<ul>
+<li><strong>React</strong><br>
+Dev build with warnings: <a href="https://fb.me/react-15.0.0-rc.2.js">https://fb.me/react-15.0.0-rc.2.js</a><br>
+Minified build for production: <a href="https://fb.me/react-15.0.0-rc.2.min.js">https://fb.me/react-15.0.0-rc.2.min.js</a><br></li>
+<li><strong>React with Add-Ons</strong><br>
+Dev build with warnings: <a href="https://fb.me/react-with-addons-15.0.0-rc.2.js">https://fb.me/react-with-addons-15.0.0-rc.2.js</a><br>
+Minified build for production: <a href="https://fb.me/react-with-addons-15.0.0-rc.2.min.js">https://fb.me/react-with-addons-15.0.0-rc.2.min.js</a><br></li>
+<li><strong>React DOM</strong> (include React in the page before React DOM)<br>
+Dev build with warnings: <a href="https://fb.me/react-dom-15.0.0-rc.2.js">https://fb.me/react-dom-15.0.0-rc.2.js</a><br>
+Minified build for production: <a href="https://fb.me/react-dom-15.0.0-rc.2.min.js">https://fb.me/react-dom-15.0.0-rc.2.min.js</a><br></li>
+</ul>
 
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-<h2><a class="anchor" name="genesis-skeleton"></a>Genesis Skeleton <a class="hash-link" href="#genesis-skeleton">#</a></h2>
-<p><a href="http://ericclemmons.github.io/">Eric Clemmons</a> is working on a &quot;Modern, opinionated, full-stack starter kit for rapid, streamlined application development&quot;. The version 0.4.0 has just been released and has first-class support for React.
-<figure><a href="http://genesis-skeleton.com/"><img src="/react/img/blog/genesis_skeleton.png" alt=""></a></figure></p>
-<h2><a class="anchor" name="agflow-talk"></a>AgFlow Talk <a class="hash-link" href="#agflow-talk">#</a></h2>
-<p><a href="http://rz.scale-it.pl/">Robert Zaremba</a> working on <a href="http://www.agflow.com/">AgFlow</a> recently talked in Poland about React.</p>
+</div>
 
-<blockquote>
-<p>In a nutshell, I presented why we chose React among other available options (ember.js, angular, backbone ...) in AgFlow, where I’m leading an application development.</p>
 
-<p>During the talk a wanted to highlight that React is not about implementing a Model, but a way to construct visible components with some state. React is simple. It is super simple, you can learn it in 1h. On the other hand what is model? Which functionality it should provide? React does one thing and does it the best (for me)!</p>
 
-<p><a href="http://rz.scale-it.pl/2013/10/20/frontend_components_in_react.html">Read the full article...</a></p>
-</blockquote>
-
-<figure><iframe src="https://docs.google.com/presentation/d/1JSFbjCuuexwOHCeHWBMNRIJdyfD2Z0ZQwX65WOWkfaI/embed?start=false" frameborder="0" width="600" height="468" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"> </iframe></figure>
-<h2><a class="anchor" name="jsx"></a>JSX <a class="hash-link" href="#jsx">#</a></h2>
-<p><a href="http://tck.io/">Todd Kennedy</a> working at Cond&eacute; Nast wrote <a href="https://github.com/CondeNast/JSXHint">JSXHint</a> and explains in a blog post his perspective on JSX.</p>
-
-<blockquote>
-<p>Lets start with the elephant in the room: JSX?
-Is this some sort of template language? Specifically no. This might have been the first big stumbling block. What looks like to be a templating language is actually an in-line DSL that gets transpiled directly into JavaScript by the JSX transpiler.</p>
-
-<p>Creating elements in memory is quick -- copying those elements into the DOM is where the slowness occurs. This is due to a variety of issues, most namely reflow/paint. Changing the items in the DOM causes the browser to re-paint the display, apply styles, etc. We want to keep those operations to an absolute minimum, especially if we&#39;re dealing with something that needs to update the DOM frequently.</p>
-
-<p><a href="http://tck.io/posts/jsxhint_and_react.html">Read the full article...</a></p>
-</blockquote>
-<h2><a class="anchor" name="photo-gallery"></a>Photo Gallery <a class="hash-link" href="#photo-gallery">#</a></h2>
-<p><a href="http://miekd.com/">Maykel Loomans</a>, designer at Instagram, wrote a gallery for photos he shot using React.
-<figure><a href="http://photos.miekd.com/xoxo2013/"><img src="/react/img/blog/xoxo2013.png" alt=""></a></figure></p>
-<h2><a class="anchor" name="random-tweet"></a>Random Tweet <a class="hash-link" href="#random-tweet">#</a></h2>
-<p><img src="/react/img/blog/steve_reverse.gif" style="float: right;" />
-<div style="width: 320px;"><blockquote class="twitter-tweet"><p>I think this reversed gif of Steve Urkel best describes my changing emotions towards the React Lib <a href="http://t.co/JoX0XqSXX3">http://t.co/JoX0XqSXX3</a></p>&mdash; Ryan Seddon (@ryanseddon) <a href="https://twitter.com/ryanseddon/statuses/398572848802852864">November 7, 2013</a></blockquote></div></p>
-
-        </div>
       </div>
     
       <div class="post-list-item">
-        <h1><a href="/react/blog/2013/11/06/community-roundup-10.html">Community Round-up #10</a></h1>
-        <p class="meta">November  6, 2013 by Vjeux</p>
-        <hr />
-        <div class="post">
-         <p>This is the 10th round-up already and React has come quite far since it was open sourced. Almost all new web projects at Khan Academy, Facebook, and Instagram are being developed using React. React has been deployed in a variety of contexts: a Chrome extension, a Windows 8 application, mobile websites, and desktop websites supporting Internet Explorer 8! Language-wise, React is not only being used within JavaScript but also CoffeeScript and ClojureScript.</p>
+        
 
-<p>The best part is that no drastic changes have been required to support all those use cases. Most of the efforts were targeted at polishing edge cases, performance improvements, and documentation.</p>
-<h2><a class="anchor" name="khan-academy---officially-moving-to-react"></a>Khan Academy - Officially moving to React <a class="hash-link" href="#khan-academy---officially-moving-to-react">#</a></h2>
-<p><a href="http://joelburget.com/">Joel Burget</a> announced at Hack Reactor that new front-end code at Khan Academy should be written in React!</p>
+<h1>
 
-<blockquote>
-<p>How did we get the rest of the team to adopt React? Using interns as an attack vector! Most full-time devs had already been working on their existing projects for a while and weren&#39;t looking to try something new at the time, but our class of summer interns was just arriving. For whatever reason, a lot of them decided to try React for their projects. Then mentors became exposed through code reviews or otherwise touching the new code. In this way React knowledge diffused to almost the whole team over the summer.</p>
+  <a href="/react/blog/2016/03/07/react-v15-rc1.html">React v15.0 Release Candidate</a>
 
-<p>Since the first React checkin on June 5, we&#39;ve somehow managed to accumulate 23500 lines of jsx (React-flavored js) code. Which is terrifying in a way - that&#39;s a lot of code - but also really exciting that it was picked up so quickly.</p>
+</h1>
 
-<p>We held three meetings about how we should proceed with React. At the first two we decided to continue experimenting with React and deferred a final decision on whether to adopt it. At the third we adopted the policy that new code should be written in React.</p>
+<p class="meta">
+  March  7, 2016
+  by
+  
+    
+      <a href="https://twitter.com/zpao">Paul O’Shannessy</a>
+    
+    
+  
+</p>
 
-<p>I&#39;m excited that we were able to start nudging code quality forward. However, we still have a lot of work to do! One of the selling points of this transition is adopting a uniform frontend style. We&#39;re trying to upgrade all the code from (really old) pure jQuery and (regular old) Backbone views / Handlebars to shiny React. At the moment all we&#39;ve done is introduce more fragmentation. We won&#39;t be gratuitously updating working code (if it ain&#39;t broke, don&#39;t fix it), but are seeking out parts of the codebase where we can shoot two birds with one stone by rewriting in React while fixing bugs or adding functionality.</p>
+<hr>
 
-<p><a href="http://joelburget.com/backbone-to-react/">Read the full article</a></p>
-</blockquote>
-<h2><a class="anchor" name="react-rethinking-best-practices"></a>React: Rethinking best practices <a class="hash-link" href="#react-rethinking-best-practices">#</a></h2>
-<p><a href="http://www.petehunt.net/">Pete Hunt</a>&#39;s talk at JSConf EU 2013 is now available in video.</p>
+<div class="post">
+  <p>Sorry for the small delay in releasing this. As we said, we&#39;ve been busy binge-watching House of Cards. That scene in the last episode where Francis and Claire Underwood <abbr title="You didn't think we would actually spoil anything did you?">████████████████████████████████████</abbr>. WOW!</p>
 
-<figure><iframe width="600" height="370" src="//www.youtube.com/embed/x7cQ3mrcKaY" frameborder="0" allowfullscreen></iframe></figure>
-<h2><a class="anchor" name="server-side-react-with-php"></a>Server-side React with PHP <a class="hash-link" href="#server-side-react-with-php">#</a></h2>
-<p><a href="http://www.phpied.com/">Stoyan Stefanov</a>&#39;s series of articles on React has two new entries on how to execute React on the server to generate the initial page load.</p>
+<p>But now we&#39;re ready, so without further ado, we&#39;re shipping a release candidate for React v15 now. As a reminder, <a href="/react/blog/2016/02/19/new-versioning-scheme.html">we&#39;re switching to major versions</a> to indicate that we have been using React in production for a long time. This 15.0 release follows our previous 0.14 version and we&#39;ll continue to follow semver like we&#39;ve been doing since 2013. It&#39;s also worth noting that <a href="/react/blog/2016/01/12/discontinuing-ie8-support.html">we no longer actively support Internet Explorer 8</a>. We believe React will work in its current form there but we will not be prioritizing any efforts to fix new issues that only affect IE8.</p>
 
-<blockquote>
-<p>This post is an initial hack to have React components render server-side in PHP.</p>
+<p>Please try it out before we publish the final release. Let us know if you run into any problems by filing issues on our <a href="https://github.com/facebook/react">GitHub repo</a>.</p>
 
-<ul>
-<li>Problem: Build web UIs</li>
-<li>Solution: React</li>
-<li>Problem: UI built in JS is anti-SEO (assuming search engines are still noscript) and bad for perceived performance (blank page till JS arrives)</li>
-<li>Solution: <a href="https://github.com/facebook/react-page">React page</a> to render the first view</li>
-<li>Problem: Can&#39;t host node.js apps / I have tons of PHP code</li>
-<li>Solution: Use PHP then!</li>
-</ul>
+<h2>Upgrade Guide</h2>
 
-<p><a href="http://www.phpied.com/server-side-react-with-php/"><strong>Read part 1 ...</strong></a></p>
+<p>Like always, we have a few breaking changes in this release. We know changes can be painful (the Facebook codebase has over 15,000 React components), so we always try to make changes gradually in order to minimize the pain.</p>
 
-<p><a href="http://www.phpied.com/server-side-react-with-php-part-2/"><strong>Read part 2 ...</strong></a></p>
+<p>If your code is free of warnings when running under React 0.14, upgrading should be easy. The bulk of changes in this release are actually behind the scenes, impacting the way that React interacts with the DOM. The other substantial change is that React now supports the full range of SVG elements and attributes. Beyond that we have a large number of incremental improvements and additional warnings aimed to aid developers. We&#39;ve also laid some groundwork in the core to bring you some new capabilities in future releases.</p>
 
-<p>Rendered markup on the server:
-<figure><a href="http://www.phpied.com/server-side-react-with-php-part-2/"><img src="/react/img/blog/react-php.png" alt=""></a></figure></p>
-</blockquote>
-<h2><a class="anchor" name="todomvc-benchmarks"></a>TodoMVC Benchmarks <a class="hash-link" href="#todomvc-benchmarks">#</a></h2>
-<p>Webkit has a <a href="https://github.com/WebKit/webkit/tree/master/PerformanceTests/DoYouEvenBench">TodoMVC Benchmark</a> that compares different frameworks. They recently included React and here are the results (average of 10 runs in Chrome 30):</p>
+<p>See the changelog below for more details.</p>
+
+<h2>Installation</h2>
+
+<p>We recommend using React from <code>npm</code> and using a tool like browserify or webpack to build your code into a single bundle. To install the two packages:</p>
 
 <ul>
-<li><strong>AngularJS:</strong> 4043ms</li>
-<li><strong>AngularJSPerf:</strong> 3227ms</li>
-<li><strong>BackboneJS:</strong> 1874ms</li>
-<li><strong>EmberJS:</strong> 6822ms</li>
-<li><strong>jQuery:</strong> 14628ms</li>
-<li><strong>React:</strong> 2864ms</li>
-<li><strong>VanillaJS:</strong> 5567ms</li>
+<li><code>npm install --save react@15.0.0-rc.1 react-dom@15.0.0-rc.1</code></li>
 </ul>
 
-<p><a href="http://www.petehunt.net/react/tastejs/benchmark.html">Try it yourself!</a></p>
+<p>Remember that by default, React runs extra checks and provides helpful warnings in development mode. When deploying your app, set the <code>NODE_ENV</code> environment variable to <code>production</code> to use the production build of React which does not include the development warnings and runs significantly faster.</p>
 
-<p>Please don&#39;t take those numbers too seriously, they only reflect one very specific use case and are testing code that wasn&#39;t written with performance in mind.</p>
+<p>If you can’t use <code>npm</code> yet, we provide pre-built browser builds for your convenience, which are also available in the <code>react</code> package on bower.</p>
 
-<p>Even though React scores as one of the fastest frameworks in the benchmark, the React code is simple and idiomatic. The only performance tweak used is the following function:</p>
-<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="cm">/**</span>
-<span class="cm"> * This is a completely optional performance enhancement that you can implement</span>
-<span class="cm"> * on any React component. If you were to delete this method the app would still</span>
-<span class="cm"> * work correctly (and still be very performant!), we just use it as an example</span>
-<span class="cm"> * of how little code it takes to get an order of magnitude performance improvement.</span>
-<span class="cm"> */</span>
-<span class="nx">shouldComponentUpdate</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">nextProps</span><span class="p">,</span> <span class="nx">nextState</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="nx">nextProps</span><span class="p">.</span><span class="nx">todo</span><span class="p">.</span><span class="nx">id</span> <span class="o">!==</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">todo</span><span class="p">.</span><span class="nx">id</span> <span class="o">||</span>
-    <span class="nx">nextProps</span><span class="p">.</span><span class="nx">todo</span> <span class="o">!==</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">todo</span> <span class="o">||</span>
-    <span class="nx">nextProps</span><span class="p">.</span><span class="nx">editing</span> <span class="o">!==</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">editing</span> <span class="o">||</span>
-    <span class="nx">nextState</span><span class="p">.</span><span class="nx">editText</span> <span class="o">!==</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">editText</span>
-  <span class="p">);</span>
-<span class="p">},</span>
+<ul>
+<li><strong>React</strong><br>
+Dev build with warnings: <a href="https://fb.me/react-15.0.0-rc.1.js">https://fb.me/react-15.0.0-rc.1.js</a><br>
+Minified build for production: <a href="https://fb.me/react-15.0.0-rc.1.min.js">https://fb.me/react-15.0.0-rc.1.min.js</a><br></li>
+<li><strong>React with Add-Ons</strong><br>
+Dev build with warnings: <a href="https://fb.me/react-with-addons-15.0.0-rc.1.js">https://fb.me/react-with-addons-15.0.0-rc.1.js</a><br>
+Minified build for production: <a href="https://fb.me/react-with-addons-15.0.0-rc.1.min.js">https://fb.me/react-with-addons-15.0.0-rc.1.min.js</a><br></li>
+<li><strong>React DOM</strong> (include React in the page before React DOM)<br>
+Dev build with warnings: <a href="https://fb.me/react-dom-15.0.0-rc.1.js">https://fb.me/react-dom-15.0.0-rc.1.js</a><br>
+Minified build for production: <a href="https://fb.me/react-dom-15.0.0-rc.1.min.js">https://fb.me/react-dom-15.0.0-rc.1.min.js</a><br></li>
+</ul>
+
+<h2>Changelog</h2>
+
+<h3>Major changes</h3>
+
+<ul>
+<li><h4><code>document.createElement</code> is in and <code>data-reactid</code> is out</h4>
+
+<p>There were a number of large changes to our interactions with the DOM. One of the most noticeable changes is that we no longer set the <code>data-reactid</code> attribute for each DOM node. While this will make it much more difficult to know if a website is using React, the advantage is that the DOM is much more lightweight. This change was made possible by us switching to use <code>document.createElement</code> on initial render. Previously we would generate a large string of HTML and then set <code>node.innerHTML</code>. At the time, this was decided to be faster than using <code>document.createElement</code> for the majority of cases and browsers that we supported. Browsers have continued to improve and so overwhelmingly this is no longer true. By using <code>createElement</code> we can make other parts of React faster. The ids were used to map back from events to the original React component, meaning we had to do a bunch of work on every event, even though we cached this data heavily. As we&#39;ve all experienced, caching and in particularly invalidating caches, can be error prone and we saw many hard to reproduce issues over the years as a result. Now we can build up a direct mapping at render time since we already have a handle on the node.</p></li>
+<li><h4>No more extra <code>&lt;span&gt;</code>s</h4>
+
+<p>Another big change with our DOM interaction is how we render text blocks. Previously you may have noticed that React rendered a lot of extra <code>&lt;span&gt;</code>s. Eg, in our most basic example on the home page we render <code>&lt;div&gt;Hello {this.props.name}&lt;/div&gt;</code>, resulting in markup that contained 2 <code>&lt;span&gt;</code>s. Now we&#39;ll render plain text nodes interspersed with comment nodes that are used for demarcation. This gives us the same ability to update individual pieces of text, without creating extra nested nodes. Very few people have depended on the actual markup generated here so it&#39;s likely you are not impacted. However if you were targeting these <code>&lt;span&gt;</code>s in your CSS, you will need to adjust accordingly. You can always render them explicitly in your components.</p></li>
+<li><h4>Rendering <code>null</code> now uses comment nodes</h4>
+
+<p>We&#39;ve also made use of these comment nodes to change what <code>null</code> renders to. Rendering to <code>null</code> was a feature we added in React v0.11 and was implemented by rendering <code>&lt;noscript&gt;</code> elements. By rendering to comment nodes now, there&#39;s a chance some of your CSS will be targeting the wrong thing, specifically if you are making use of <code>:nth-child</code> selectors. This, along with the other changes mentioned above, have always been considered implementation details of how React targets the DOM. We believe they are safe changes to make without going through a release with warnings detailing the subtle differences as they are details that should not be depended upon. Additionally, we have seen that these changes have improved React performance for many typical applications.</p></li>
+<li><h4>Improved SVG support</h4>
+
+<p>All SVG tags and attributes are now fully supported. (Uncommon SVG tags are not present on the <code>React.DOM</code> element helper, but JSX and <code>React.createElement</code> work on all tag names.) All SVG attributes match their original capitalization and hyphenation as defined in the specification (ex: <code>gradientTransform</code> must be camel-cased but <code>clip-path</code> should be hyphenated).</p></li>
+</ul>
+
+<h3>Breaking changes</h3>
+
+<p>It&#39;s worth calling out the DOM structure changes above again, in particular the change from <code>&lt;span&gt;</code>s. In the course of updating the Facebook codebase, we found a very small amount of code that was depending on the markup that React generated. Some of these cases were integration tests like WebDriver which were doing very specific XPath queries to target nodes. Others were simply tests using <code>ReactDOM.renderToStaticMarkup</code> and comparing markup. Again, there were a very small number of changes that had to be made, but we don&#39;t want anybody to be blindsided. We encourage everybody to run their test suites when upgrading and consider alternative approaches when possible. One approach that will work for some cases is to explicitly use <code>&lt;span&gt;</code>s in your <code>render</code> method.</p>
+
+<p>These deprecations were introduced in v0.14 with a warning and the APIs are now removed.</p>
+
+<ul>
+<li>Deprecated APIs removed from <code>React</code>, specifically <code>findDOMNode</code>, <code>render</code>, <code>renderToString</code>, <code>renderToStaticMarkup</code>, and <code>unmountComponentAtNode</code>.</li>
+<li>Deprecated APIs removed from <code>React.addons</code>, specifically <code>batchedUpdates</code> and <code>cloneWithProps</code>.</li>
+<li>Deprecated APIs removed from component instances, specifically <code>setProps</code>, <code>replaceProps</code>, and <code>getDOMNode</code>.</li>
+</ul>
+
+<h3>New deprecations, introduced with a warning</h3>
+
+<p>Each of these changes will continue to work as before with a new warning until the release of React 16 so you can upgrade your code gradually.</p>
+
+<ul>
+<li><code>LinkedStateMixin</code> and <code>valueLink</code> are now deprecated due to very low popularity. If you need this, you can use a wrapper component that implements the same behavior: <a href="https://www.npmjs.com/package/react-linked-input">react-linked-input</a>.</li>
+</ul>
+
+<h3>New helpful warnings</h3>
+
+<ul>
+<li>If you use a minified copy of the <em>development</em> build, React DOM kindly encourages you to use the faster production build instead.</li>
+<li>React DOM: When specifying a unit-less CSS value as a string, a future version will not add <code>px</code> automatically. This version now warns in this case (ex: writing <code>style={{width: &#39;300&#39;}}</code>. (Unitless <em>number</em> values like <code>width: 300</code> are unchanged.)</li>
+<li>Synthetic Events will now warn when setting and accessing properties (which will not get cleared appropriately), as well as warn on access after an event has been returned to the pool.</li>
+<li>Elements will now warn when attempting to read <code>ref</code> and <code>key</code> from the props.</li>
+<li>React DOM now attempts to warn for mistyped event handlers on DOM elements (ex: <code>onclick</code> which should be <code>onClick</code>)</li>
+</ul>
+
+<h3>Notable bug fixes</h3>
+
+<ul>
+<li>Fixed multiple small memory leaks</li>
+<li>Input events are handled more reliably in IE 10 and IE 11; spurious events no longer fire when using a placeholder.</li>
+<li>React DOM now supports the <code>cite</code> and <code>profile</code> HTML attributes.</li>
+<li>React DOM now supports the <code>onAnimationStart</code>, <code>onAnimationEnd</code>, <code>onAnimationIteration</code>, <code>onTransitionEnd</code>, and <code>onInvalid</code> events. Support for <code>onLoad</code> has been added to <code>object</code> elements.</li>
+<li><code>Object.is</code> is used in a number of places to compare values, which leads to fewer false positives, especially involving <code>NaN</code>. In particular, this affects the <code>shallowCompare</code> add-on.</li>
+<li>React DOM now defaults to using DOM attributes instead of properties, which fixes a few edge case bugs. Additionally the nullification of values (ex: <code>href={null}</code>) now results in the forceful removal, no longer trying to set to the default value used by browsers in the absence of a value.</li>
+</ul>
+
+</div>
+
+
+
+      </div>
+    
+      <div class="post-list-item">
+        
+
+<h1>
+
+  <a href="/react/blog/2016/02/19/new-versioning-scheme.html">New Versioning Scheme</a>
+
+</h1>
+
+<p class="meta">
+  February 19, 2016
+  by
+  
+    
+      <a href="https://twitter.com/sebmarkbage">Sebastian Markbåge</a>
+    
+    
+  
+</p>
+
+<hr>
+
+<div class="post">
+  <p>Today we&#39;re announcing that we&#39;re switching to major revisions for React. The current version is 0.14.7. The next release will be: <strong>15.0.0</strong></p>
+
+<p>This change shouldn&#39;t materially affect most of you. Moving to major semver versions simply helps indicate our commitment to stability and gives us the flexibility to add new backwards-compatible features in minor releases. This means we can have fewer major releases and you won&#39;t have to wait as long to take advantage of improvements to React. Plus, if you&#39;re a component author, this versioning scheme gives you the flexibility to support two major versions of React at the same time so you don&#39;t need to leave anyone behind.</p>
+
+<p>The core of the React API has been stable for years. Our business as well as many of yours all depend heavily on the use of React as a core piece of our infrastructure. We&#39;re committed to the stability as well as the progress of React going forward.</p>
+
+<h2>Bring Everyone Along</h2>
+
+<p>React isn&#39;t just a library but an ecosystem. We know that your applications and ours are not just isolated islands of code. It is a network of your own application code, your own open source components and third party libraries that all depend on React.</p>
+
+<p><img src="/react/img/blog/versioning-1.png" width="403"></p>
+
+<p>Therefore it is important that we don&#39;t just upgrade our own codebases but that we bring our whole community with us. We take the upgrade path very seriously - for everyone.</p>
+
+<p><img src="/react/img/blog/versioning-poll.png" width="596"></p>
+
+<h2>Introducing Minor Releases</h2>
+
+<p>Ideally everyone could just depend on the latest version of React all the time.</p>
+
+<p><img src="/react/img/blog/versioning-2.png" width="463"></p>
+
+<p>We know that in practice that is not possible. In the future, we expect more new additive APIs rather than breakage of existing ones. By moving to major revisions in the semver scheme, we can release new versions without breaking existing ones.</p>
+
+<p><img src="/react/img/blog/versioning-3.png" width="503"></p>
+
+<p>That means that if one component needs a new API, there is no need for any of the other components to do any further work. They remain compatible.</p>
+
+<h2>What Happened to 1.0.0?</h2>
+
+<p>Part of React&#39;s growth and popularity is that it is stable and performant in production. People have long asked what React v1.0 will look. Technically some breaking changes are important to avoid stagnating, but we still achieve stability by making it easy to upgrade. If major version numbers indicate API stability and engender trust that it can be used in production, then we got there a long time ago. There are too many preconceived notions of what v1.0 is. We&#39;re still following semver. We&#39;re just communicating stability by moving the 0 from the beginning to the end.</p>
+
+<h2>Breaking Changes</h2>
+
+<p>Minor revision releases will include deprecation warnings and tips for how to upgrade an API or pattern that will be removed or changed in the future.</p>
+
+<p>We will continue to release <a href="https://www.youtube.com/watch?v=d0pOgY8__JM">codemods</a> for common patterns to make automatic upgrades of your codebase easier.</p>
+
+<p>Once we&#39;ve reached the end of life for a particular major version, we&#39;ll release a new major version where all deprecated APIs have been removed.</p>
+
+<h2>Avoiding The Major Cliff</h2>
+
+<p>If you try to upgrade your component to 16.0.0 you might find that your application no longer works if you still have other dependencies. E.g. if Ryan&#39;s and Jed&#39;s components are only compatible with 15.x.x.</p>
+
+<p><img src="/react/img/blog/versioning-4.png" width="498"></p>
+
+<p>Worst case, you revert back to 15.1.0 for your application. Since you&#39;ll want to use your component, you might also revert that one.</p>
+
+<p><img src="/react/img/blog/versioning-5.png" width="493"></p>
+
+<p>Of course, Ryan and Jed think the same way. If we&#39;re not careful, we can hit a cliff where nobody upgrades. This has happened to many software project ecosystems in the past.</p>
+
+<p>Therefore, we&#39;re committed to making it easy for most components and libraries built on top of React to be compatible with two major versions at the same time. We will do this by introducing new APIs before completely removing the old ones, thereby avoiding those cliffs.</p>
+
+<p><img src="/react/img/blog/versioning-6.png" width="493"></p>
+
+</div>
+
+
+
+      </div>
+    
+      <div class="post-list-item">
+        
+
+<h1>
+
+  <a href="/react/blog/2016/01/12/discontinuing-ie8-support.html">Discontinuing IE 8 Support in React DOM</a>
+
+</h1>
+
+<p class="meta">
+  January 12, 2016
+  by
+  
+    
+      <a href="http://benalpert.com">Ben Alpert</a>
+    
+    
+  
+</p>
+
+<hr>
+
+<div class="post">
+  <p>Since its 2013 release, React has supported all popular browsers, including Internet Explorer 8 and above. We handle normalizing many quirks present in old browser versions, including event system differences, so that your app code doesn&#39;t have to worry about most browser bugs.</p>
+
+<p>Today, Microsoft <a href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support">discontinued support for older versions of IE</a>. Starting with React v15, we&#39;re discontinuing React DOM&#39;s support for IE 8. We&#39;ve heard that most React DOM apps already don&#39;t support old versions of Internet Explorer, so this shouldn&#39;t affect many people. This change will help us develop faster and make React DOM even better. (We won&#39;t actively remove IE 8–related code quite yet, but we will deprioritize new bugs that are reported. If you need to support IE 8 we recommend you stay on React v0.14.)</p>
+
+<p>React DOM will continue to support IE 9 and above for the foreseeable future.</p>
+
+</div>
+
+
+
+      </div>
+    
+      <div class="post-list-item">
+        
+
+<h1>
+
+  <a href="/react/blog/2016/01/08/A-implies-B-does-not-imply-B-implies-A.html">(A => B) !=> (B => A)</a>
+
+</h1>
+
+<p class="meta">
+  January  8, 2016
+  by
+  
+    
+      <a href="http://www.jimsproch.com">Jim Sproch</a>
+    
+    
+  
+</p>
+
+<hr>
+
+<div class="post">
+  <p>The documentation for <code>componentWillReceiveProps</code> states that <code>componentWillReceiveProps</code> will be invoked when the props change as the result of a rerender. Some people assume this means &quot;if <code>componentWillReceiveProps</code> is called, then the props must have changed&quot;, but that conclusion is logically incorrect.</p>
+
+<p>The guiding principle is one of my favorites from formal logic/mathematics:</p>
+
+<blockquote>
+<p>A implies B does not imply B implies A</p>
+</blockquote>
+
+<p>Example: &quot;If I eat moldy food, then I will get sick&quot; does not imply &quot;if I am sick, then I must have eaten moldy food&quot;. There are many other reasons I could be feeling sick. For instance, maybe the flu is circulating around the office. Similarly, there are many reasons that <code>componentWillReceiveProps</code> might get called, even if the props didn’t change.</p>
+
+<p>If you don’t believe me, call <code>ReactDOM.render()</code> three times with the exact same props, and try to predict the number of times <code>componentWillReceiveProps</code> will get called:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kr">class</span> <span class="nx">Component</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">componentWillReceiveProps</span><span class="p">(</span><span class="nx">nextProps</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;componentWillReceiveProps&#39;</span><span class="p">,</span> <span class="nx">nextProps</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">bar</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">Bar</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">bar</span><span class="p">}</span><span class="o">!&lt;</span><span class="err">/div&gt;;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;container&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">mydata</span> <span class="o">=</span> <span class="p">{</span><span class="nx">bar</span><span class="o">:</span> <span class="s1">&#39;drinks&#39;</span><span class="p">};</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">mydata</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nx">container</span><span class="p">);</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">mydata</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nx">container</span><span class="p">);</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">mydata</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nx">container</span><span class="p">);</span>
 </code></pre></div>
-<p>By default, React &quot;re-renders&quot; all the components when anything changes. This is usually fast enough that you don&#39;t need to care. However, you can provide a function that can tell whether there will be any change based on the previous and next states and props. If it is faster than re-rendering the component, then you get a performance improvement.</p>
+<p>In this case, the answer is &quot;2&quot;. React calls <code>componentWillReceiveProps</code> twice (once for each of the two updates). Both times, the value of &quot;drinks&quot; is printed (ie. the props didn’t change).</p>
 
-<p>The fact that you can control when components are rendered is a very important characteristic of React as it gives you control over its performance. We are going to talk more about performance in the future, stay tuned.</p>
-<h2><a class="anchor" name="guess-the-filter"></a>Guess the filter <a class="hash-link" href="#guess-the-filter">#</a></h2>
-<p><a href="http://conr.me">Connor McSheffrey</a> implemented a small game using React. The goal is to guess which filter has been used to create the Instagram photo.
-<figure><a href="http://guessthefilter.com/"><img src="/react/img/blog/guess_filter.jpg" alt=""></a></figure></p>
-<h2><a class="anchor" name="react-vs-fruitmachine"></a>React vs FruitMachine <a class="hash-link" href="#react-vs-fruitmachine">#</a></h2>
-<p><a href="http://trib.tv/">Andrew Betts</a>, director of the <a href="http://labs.ft.com/">Financial Times Labs</a>, posted an article comparing <a href="https://github.com/ftlabs/fruitmachine">FruitMachine</a> and React.</p>
+<p>To understand why, we need to think about what <em>could</em> have happened. The data <em>could</em> have changed between the initial render and the two subsequent updates, if the code had performed a mutation like this:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">mydata</span> <span class="o">=</span> <span class="p">{</span><span class="nx">bar</span><span class="o">:</span> <span class="s1">&#39;drinks&#39;</span><span class="p">};</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">mydata</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nx">container</span><span class="p">);</span>
+<span class="nx">mydata</span><span class="p">.</span><span class="nx">bar</span> <span class="o">=</span> <span class="s1">&#39;food&#39;</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">mydata</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nx">container</span><span class="p">);</span>
+<span class="nx">mydata</span><span class="p">.</span><span class="nx">bar</span> <span class="o">=</span> <span class="s1">&#39;noise&#39;</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Component</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">mydata</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span> <span class="nx">container</span><span class="p">);</span>
+</code></pre></div>
+<p>React has no way of knowing that the data didn’t change. Therefore, React needs to call <code>componentWillReceiveProps</code>, because the component needs to be notified of the new props (even if the new props happen to be the same as the old props).</p>
 
-<blockquote>
-<p>Eerily similar, no? Maybe Facebook was inspired by Fruit Machine (after all, we got there first), but more likely, it just shows that this is a pretty decent way to solve the problem, and great minds think alike. We&#39;re graduating to a third phase in the evolution of web best practice - from intermingling of markup, style and behaviour, through a phase in which those concerns became ever more separated and encapsulated, and finally to a model where we can do that separation at a component level. Developments like Web Components show the direction the web community is moving, and frameworks like React and Fruit Machine are in fact not a lot more than polyfills for that promised behaviour to come.</p>
-
-<p><a href="http://labs.ft.com/2013/10/client-side-layout-engines-react-vs-fruitmachine/">Read the full article...</a></p>
-</blockquote>
-
-<p>Even though we weren&#39;t inspired by FruitMachine (React has been used in production since before FruitMachine was open sourced), it&#39;s great to see similar technologies emerging and becoming popular.</p>
-<h2><a class="anchor" name="react-brunch"></a>React Brunch <a class="hash-link" href="#react-brunch">#</a></h2>
-<p><a href="http://elucidata.net/">Matthew McCray</a> implemented <a href="https://npmjs.org/package/react-brunch">react-brunch</a>, a JSX compilation step for <a href="http://brunch.io/">Brunch</a>.</p>
-
-<blockquote>
-<p>Adds React support to brunch by automatically compiling <code>*.jsx</code> files.</p>
-
-<p>You can configure react-brunch to automatically insert a react header (<code>/** @jsx React.DOM */</code>) into all <code>*.jsx</code> files. Disabled by default.</p>
-
-<p>Install the plugin via npm with <code>npm install --save react-brunch</code>.</p>
-
-<p><a href="https://npmjs.org/package/react-brunch">Read more...</a></p>
-</blockquote>
-<h2><a class="anchor" name="random-tweet"></a>Random Tweet <a class="hash-link" href="#random-tweet">#</a></h2>
-<p>I&#39;m going to start adding a tweet at the end of each round-up. We&#39;ll start with this one:</p>
-
-<blockquote class="twitter-tweet"><p>This weekend <a href="https://twitter.com/search?q=%23angular&amp;src=hash">#angular</a> died for me. Meet new king <a href="https://twitter.com/search?q=%23reactjs&amp;src=hash">#reactjs</a></p>&mdash; Eldar Djafarov &#x30C3; (@edjafarov) <a href="https://twitter.com/edjafarov/statuses/397033796710961152">November 3, 2013</a></blockquote>
-
-        </div>
-      </div>
-    
-      <div class="post-list-item">
-        <h1><a href="/react/blog/2013/11/05/thinking-in-react.html">Thinking in React</a></h1>
-        <p class="meta">November  5, 2013 by Pete Hunt</p>
-        <hr />
-        <div class="post">
-         <p>React is, in my opinion, the premier way to build big, fast Web apps with JavaScript. It&#39;s scaled very well for us at Facebook and Instagram.</p>
-
-<p>One of the many great parts of React is how it makes you think about apps as you build them. In this post I&#39;ll walk you through the thought process of building a searchable product data table using React.</p>
-<h2><a class="anchor" name="start-with-a-mock"></a>Start with a mock <a class="hash-link" href="#start-with-a-mock">#</a></h2>
-<p>Imagine that we already have a JSON API and a mock from our designer. Our designer apparently isn&#39;t very good because the mock looks like this:</p>
-
-<p><img src="/react/img/blog/thinking-in-react-mock.png" alt="Mockup"></p>
-
-<p>Our JSON API returns some data that looks like this:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">[
-  {category: &quot;Sporting Goods&quot;, price: &quot;$49.99&quot;, stocked: true, name: &quot;Football&quot;},
-  {category: &quot;Sporting Goods&quot;, price: &quot;$9.99&quot;, stocked: true, name: &quot;Baseball&quot;},
-  {category: &quot;Sporting Goods&quot;, price: &quot;$29.99&quot;, stocked: false, name: &quot;Basketball&quot;},
-  {category: &quot;Electronics&quot;, price: &quot;$99.99&quot;, stocked: true, name: &quot;iPod Touch&quot;},
-  {category: &quot;Electronics&quot;, price: &quot;$399.99&quot;, stocked: false, name: &quot;iPhone 5&quot;},
-  {category: &quot;Electronics&quot;, price: &quot;$199.99&quot;, stocked: true, name: &quot;Nexus 7&quot;}
-];
-</code></pre></div><h2><a class="anchor" name="step-1-break-the-ui-into-a-component-hierarchy"></a>Step 1: break the UI into a component hierarchy <a class="hash-link" href="#step-1-break-the-ui-into-a-component-hierarchy">#</a></h2>
-<p>The first thing you&#39;ll want to do is to draw boxes around every component (and subcomponent) in the mock and give them all names. If you&#39;re working with a designer they may have already done this, so go talk to them! Their Photoshop layer names may end up being the names of your React components!</p>
-
-<p>But how do you know what should be its own component? Just use the same techniques for deciding if you should create a new function or object. One such technique is the <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility principle</a>, that is, a component should ideally only do one thing. If it ends up growing it should be decomposed into smaller subcomponents.</p>
-
-<p>Since you&#39;re often displaying a JSON data model to a user, you&#39;ll find that if your model was built correctly your UI (and therefore your component structure) will map nicely onto it. That&#39;s because user interfaces and data models tend to adhere to the same <em>information architecture</em> which means the work of separating your UI into components is often trivial. Just break it up into components that represent exactly one piece of your data model.</p>
-
-<p><img src="/react/img/blog/thinking-in-react-components.png" alt="Component diagram"></p>
-
-<p>You&#39;ll see here that we have five components in our simple app. I&#39;ve italicized the data each component represents.</p>
-
-<ol>
-<li><strong><code>FilterableProductTable</code> (orange):</strong> contains the entirety of the example</li>
-<li><strong><code>SearchBar</code> (blue):</strong> receives all <em>user input</em></li>
-<li><strong><code>ProductTable</code> (green):</strong> displays and filters the <em>data collection</em> based on <em>user input</em></li>
-<li><strong><code>ProductCategoryRow</code> (turquoise):</strong> displays a heading for each <em>category</em></li>
-<li><strong><code>ProductRow</code> (red):</strong> displays a row for each <em>product</em></li>
-</ol>
-
-<p>If you look at <code>ProductTable</code> you&#39;ll see that the table header (containing the &quot;Name&quot; and &quot;Price&quot; labels) isn&#39;t its own component. This is a matter of preference and there&#39;s an argument to be made either way. For this example I left it as part of <code>ProductTable</code> because it is part of rendering the <em>data collection</em> which is <code>ProductTable</code>&#39;s responsibility. However if this header grows to be complex (i.e. if we were to add affordances for sorting) it would certainly make sense to make this its own <code>ProductTableHeader</code> component.</p>
-
-<p>Now that we&#39;ve identified the components in our mock, let&#39;s arrange them into a hierarchy. This is easy. Components that appear within another component in the mock should appear as a child in the hierarchy:</p>
+<p>You might think that React could just use smarter checks for equality, but there are some issues with this idea:</p>
 
 <ul>
-<li><code>FilterableProductTable</code>
-
-<ul>
-<li><code>SearchBar</code></li>
-<li><code>ProductTable</code>
-
-<ul>
-<li><code>ProductCategoryRow</code></li>
-<li><code>ProductRow</code></li>
-</ul></li>
-</ul></li>
-</ul>
-<h2><a class="anchor" name="step-2-build-a-static-version-in-react"></a>Step 2: Build a static version in React <a class="hash-link" href="#step-2-build-a-static-version-in-react">#</a></h2>
-<iframe width="100%" height="300" src="http://jsfiddle.net/6wQMG/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-<p>Now that you have your component hierarchy it&#39;s time to start implementing your app. The easiest way is to build a version that takes your data model and renders the UI but has no interactivity. It&#39;s easiest to decouple these processes because building a static version requires a lot of typing and no thinking, and adding interactivity requires a lot of thinking and not a lot of typing. We&#39;ll see why.</p>
-
-<p>To build a static version of your app that renders your data model you&#39;ll want to build components that reuse other components and pass data using <em>props</em>. <em>props</em> are a way of passing data from parent to child. If you&#39;re familiar with the concept of <em>state</em>, <strong>don&#39;t use state at all</strong> to build this static version. State is reserved only for interactivity, that is, data that changes over time. Since this is a static version of the app you don&#39;t need it.</p>
-
-<p>You can build top-down or bottom-up. That is, you can either start with building the components higher up in the hierarchy (i.e. starting with <code>FilterableProductTable</code>) or with the ones lower in it (<code>ProductRow</code>). In simpler examples it&#39;s usually easier to go top-down and on larger projects it&#39;s easier to go bottom-up and write tests as you build.</p>
-
-<p>At the end of this step you&#39;ll have a library of reusable components that render your data model. The components will only have <code>render()</code> methods since this is a static version of your app. The component at the top of the hierarchy (<code>FilterableProductTable</code>) will take your data model as a prop. If you make a change to your underlying data model and call <code>renderComponent()</code> again the UI will be updated. It&#39;s easy to see how your UI is updated and where to make changes since there&#39;s nothing complicated going on since React&#39;s <strong>one-way data flow</strong> (also called <em>one-way binding</em>) keeps everything modular, easy to reason about, and fast.</p>
-
-<p>Simply refer to the <a href="http://facebook.github.io/react/docs/">React docs</a> if you need help executing this step.</p>
-<h3><a class="anchor" name="a-brief-interlude-props-vs-state"></a>A brief interlude: props vs state <a class="hash-link" href="#a-brief-interlude-props-vs-state">#</a></h3>
-<p>There are two types of &quot;model&quot; data in React: props and state. It&#39;s important to understand the distinction between the two; skim <a href="http://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html">the official React docs</a> if you aren&#39;t sure what the difference is.</p>
-<h2><a class="anchor" name="step-3-identify-the-minimal-but-complete-representation-of-ui-state"></a>Step 3: Identify the minimal (but complete) representation of UI state <a class="hash-link" href="#step-3-identify-the-minimal-but-complete-representation-of-ui-state">#</a></h2>
-<p>To make your UI interactive you need to be able to trigger changes to your underlying data model. React makes this easy with <strong>state</strong>.</p>
-
-<p>To build your app correctly you first need to think of the minimal set of mutable state that your app needs. The key here is DRY: <em>Don&#39;t Repeat Yourself</em>. Figure out what the absolute minimal representation of the state of your application needs to be and compute everything else you need on-demand. For example, if you&#39;re building a TODO list, just keep an array of the TODO items around; don&#39;t keep a separate state variable for the count. Instead, when you want to render the TODO count simply take the length of the TODO items array.</p>
-
-<p>Think of all of the pieces of data in our example application. We have:</p>
-
-<ul>
-<li>The original list of products</li>
-<li>The search text the user has entered</li>
-<li>The value of the checkbox</li>
-<li>The filtered list of products</li>
+<li>The old <code>mydata</code> and the new <code>mydata</code> are actually the same physical object (only the object’s internal value changed). Since the references are triple-equals-equal, doing an equality check doesn’t tell us if the value has changed. The only possible solution would be to have created a deep copy of the data, and then later do a deep comparison - but this can be prohibitively expensive for large data structures (especially ones with cycles).</li>
+<li>The <code>mydata</code> object might contain references to functions which have captured variables within closures. There is no way for React to peek into these closures, and thus no way for React to copy them and/or verify equality.</li>
+<li>The <code>mydata</code> object might contain references to objects which are re-instantiated during the parent&#39;s render (ie. not triple-equals-equal) but are conceptually equal (ie. same keys and same values). A deep-compare (expensive) could detect this, except that functions present a problem again because there is no reliable way to compare two functions to see if they are semantically equivalent.</li>
 </ul>
 
-<p>Let&#39;s go through each one and figure out which one is state. Simply ask three questions about each piece of data:</p>
+<p>Given the language constraints, it is sometimes impossible for us to achieve meaningful equality semantics. In such cases, React will call <code>componentWillReceiveProps</code> (even though the props might not have changed) so the component has an opportunity to examine the new props and act accordingly.</p>
 
-<ol>
-<li>Is it passed in from a parent via props? If so, it probably isn&#39;t state.</li>
-<li>Does it change over time? If not, it probably isn&#39;t state.</li>
-<li>Can you compute it based on any other state or props in your component? If so, it&#39;s not state.</li>
-</ol>
+<p>As a result, your implementation of <code>componentWillReceiveProps</code> MUST NOT assume that your props have changed. If you want an operation (such as a network request) to occur only when props have changed, your <code>componentWillReceiveProps</code> code needs to check to see if the props actually changed.</p>
 
-<p>The original list of products is passed in as props, so that&#39;s not state. The search text and the checkbox seem to be state since they change over time and can&#39;t be computed from anything. And finally, the filtered list of products isn&#39;t state because it can be computed by combining the original list of products with the search text and value of the checkbox.</p>
+</div>
 
-<p>So finally, our state is:</p>
 
-<ul>
-<li>The search text the user has entered</li>
-<li>The value of the checkbox</li>
-</ul>
-<h2><a class="anchor" name="step-4-identify-where-your-state-should-live"></a>Step 4: Identify where your state should live <a class="hash-link" href="#step-4-identify-where-your-state-should-live">#</a></h2>
-<iframe width="100%" height="300" src="http://jsfiddle.net/QvHnx/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-<p>OK, so we&#39;ve identified what the minimal set of app state is. Next we need to identify which component mutates, or <em>owns</em>, this state.</p>
-
-<p>Remember: React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state. <strong>This is often the most challenging part for newcomers to understand,</strong> so follow these steps to figure it out:</p>
-
-<p>For each piece of state in your application:</p>
-
-<ul>
-<li>Identify every component that renders something based on that state.</li>
-<li>Find a common owner component (a single component above all the components that need the state in the hierarchy).</li>
-<li>Either the common owner or another component higher up in the hierarchy should own the state.</li>
-<li>If you can&#39;t find a component where it makes sense to own the state, create a new component simply for holding the state and add it somewhere in the hierarchy above the common owner component.</li>
-</ul>
-
-<p>Let&#39;s run through this strategy for our application:</p>
-
-<ul>
-<li><code>ProductTable</code> needs to filter the product list based on state and <code>SearchBar</code> needs to display the search text and checked state.</li>
-<li>The common owner component is <code>FilterableProductTable</code>.</li>
-<li>It conceptually makes sense for the filter text and checked value to live in <code>FilterableProductTable</code></li>
-</ul>
-
-<p>Cool, so we&#39;ve decided that our state lives in <code>FilterableProductTable</code>. First, add a <code>getInitialState()</code> method to <code>FilterableProductTable</code> that returns <code>{filterText: &#39;&#39;, inStockOnly: false}</code> to reflect the initial state of your application. Then pass <code>filterText</code> and <code>inStockOnly</code> to <code>ProductTable</code> and <code>SearchBar</code> as a prop. Finally, use these props to filter the rows in <code>ProductTable</code> and set the values of the form fields in <code>SearchBar</code>.</p>
-
-<p>You can start seeing how your application will behave: set <code>filterText</code> to <code>&quot;ball&quot;</code> and refresh your app. You&#39;ll see the data table is updated correctly.</p>
-<h2><a class="anchor" name="step-5-add-inverse-data-flow"></a>Step 5: Add inverse data flow <a class="hash-link" href="#step-5-add-inverse-data-flow">#</a></h2>
-<iframe width="100%" height="300" src="http://jsfiddle.net/3Vs3Q/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-<p>So far we&#39;ve built an app that renders correctly as a function of props and state flowing down the hierarchy. Now it&#39;s time to support data flowing the other way: the form components deep in the hierarchy need to update the state in <code>FilterableProductTable</code>.</p>
-
-<p>React makes this data flow explicit to make it easy to understand how your program works, but it does require a little more typing than traditional two-way data binding. React provides an add-on called <code>ReactLink</code> to make this pattern as convenient as two-way binding, but for the purpose of this post we&#39;ll keep everything explicit.</p>
-
-<p>If you try to type or check the box in the current version of the example you&#39;ll see that React ignores your input. This is intentional, as we&#39;ve set the <code>value</code> prop of the <code>input</code> to always be equal to the <code>state</code> passed in from <code>FilterableProductTable</code>.</p>
-
-<p>Let&#39;s think about what we want to happen. We want to make sure that whenever the user changes the form we update the state to reflect the user input. Since components should only update their own state, <code>FilterableProductTable</code> will pass a callback to <code>SearchBar</code> that will fire whenever the state should be updated. We can use the <code>onChange</code> event on the inputs to be notified of it. And the callback passed by <code>FilterableProductTable</code> will call <code>setState()</code> and the app will be updated.</p>
-
-<p>Though this sounds like a lot it&#39;s really just a few lines of code. And it&#39;s really explicit how your data is flowing throughout the app.</p>
-<h2><a class="anchor" name="and-thats-it"></a>And that&#39;s it <a class="hash-link" href="#and-thats-it">#</a></h2>
-<p>Hopefully this gives you an idea of how to think about building components and applications with React. While it may be a little more typing than you&#39;re used to, remember that code is read far more than it&#39;s written, and it&#39;s extremely easy to read this modular, explicit code. As you start to build large libraries of components you&#39;ll appreciate this explicitness and modularity, and with code reuse your lines of code will start to shrink :)</p>
-
-        </div>
-      </div>
-    
-      <div class="post-list-item">
-        <h1><a href="/react/blog/2013/10/29/react-v0-5-1.html">React v0.5.1</a></h1>
-        <p class="meta">October 29, 2013 by Paul O'Shannessy</p>
-        <hr />
-        <div class="post">
-         <p>This release focuses on fixing some small bugs that have been uncovered over the past two weeks. I would like to thank everybody involved, specifically members of the community who fixed half of the issues found. Thanks to <a href="https://github.com/spicyj">Ben Alpert</a>, <a href="https://github.com/andreypopp">Andrey Popp</a>, and <a href="https://github.com/lrowe">Laurence Rowe</a> for their contributions!</p>
-<h2><a class="anchor" name="changelog"></a>Changelog <a class="hash-link" href="#changelog">#</a></h2><h3><a class="anchor" name="react"></a>React <a class="hash-link" href="#react">#</a></h3>
-<ul>
-<li>Fixed bug with <code>&lt;input type=&quot;range&quot;&gt;</code> and selection events.</li>
-<li>Fixed bug with selection and focus.</li>
-<li>Made it possible to unmount components from the document root.</li>
-<li>Fixed bug for <code>disabled</code> attribute handling on non-<code>&lt;input&gt;</code> elements.</li>
-</ul>
-<h3><a class="anchor" name="react-with-addons"></a>React with Addons <a class="hash-link" href="#react-with-addons">#</a></h3>
-<ul>
-<li>Fixed bug with transition and animation event detection.</li>
-</ul>
-
-        </div>
-      </div>
-    
-      <div class="post-list-item">
-        <h1><a href="/react/blog/2013/10/16/react-v0.5.0.html">React v0.5</a></h1>
-        <p class="meta">October 16, 2013 by Paul O'Shannessy</p>
-        <hr />
-        <div class="post">
-         <p>This release is the result of several months of hard work from members of the team and the community. While there are no groundbreaking changes in core, we&#39;ve worked hard to improve performance and memory usage. We&#39;ve also worked hard to make sure we are being consistent in our usage of DOM properties.</p>
-
-<p>The biggest change you&#39;ll notice as a developer is that we no longer support <code>class</code> in JSX as a way to provide CSS classes. Since this prop was being converted to <code>className</code> at the transform step, it caused some confusion when trying to access it in composite components. As a result we decided to make our DOM properties mirror their counterparts in the JS DOM API. There are <a href="https://github.com/facebook/react/blob/master/src/dom/DefaultDOMPropertyConfig.js#L156">a few exceptions</a> where we deviate slightly in an attempt to be consistent internally.</p>
-
-<p>The other major change in v0.5 is that we&#39;ve added an additional build - <code>react-with-addons</code> - which adds support for some extras that we&#39;ve been working on including animations and two-way binding. <a href="/react/docs/addons.html">Read more about these addons in the docs</a>.</p>
-<h2><a class="anchor" name="thanks-to-our-community"></a>Thanks to Our Community <a class="hash-link" href="#thanks-to-our-community">#</a></h2>
-<p>We added <em>22 new people</em> to the list of authors since we launched React v0.4.1 nearly 3 months ago. With a total of 48 names in our <code>AUTHORS</code> file, that means we&#39;ve nearly doubled the number of contributors in that time period. We&#39;ve seen the number of people contributing to discussion on IRC, mailing lists, Stack Overflow, and GitHub continue rising. We&#39;ve also had people tell us about talks they&#39;ve given in their local community about React.</p>
-
-<p>It&#39;s been awesome to see the things that people are building with React, and we can&#39;t wait to see what you come up with next!</p>
-<h2><a class="anchor" name="changelog"></a>Changelog <a class="hash-link" href="#changelog">#</a></h2><h3><a class="anchor" name="react"></a>React <a class="hash-link" href="#react">#</a></h3>
-<ul>
-<li>Memory usage improvements - reduced allocations in core which will help with GC pauses</li>
-<li>Performance improvements - in addition to speeding things up, we made some tweaks to stay out of slow path code in V8 and Nitro.</li>
-<li>Standardized prop -&gt; DOM attribute process. This previously resulting in additional type checking and overhead as well as confusing cases for users. Now we will always convert your value to a string before inserting it into the DOM.</li>
-<li>Support for Selection events.</li>
-<li>Support for <a href="https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent">Composition events</a>.</li>
-<li>Support for additional DOM properties (<code>charSet</code>, <code>content</code>, <code>form</code>, <code>httpEquiv</code>, <code>rowSpan</code>, <code>autoCapitalize</code>).</li>
-<li>Support for additional SVG properties (<code>rx</code>, <code>ry</code>).</li>
-<li>Support for using <code>getInitialState</code> and <code>getDefaultProps</code> in mixins.</li>
-<li>Support mounting into iframes.</li>
-<li>Bug fixes for controlled form components.</li>
-<li>Bug fixes for SVG element creation.</li>
-<li>Added <code>React.version</code>.</li>
-<li>Added <code>React.isValidClass</code> - Used to determine if a value is a valid component constructor.</li>
-<li>Removed <code>React.autoBind</code> - This was deprecated in v0.4 and now properly removed.</li>
-<li>Renamed  <code>React.unmountAndReleaseReactRootNode</code> to <code>React.unmountComponentAtNode</code>.</li>
-<li>Began laying down work for refined performance analysis.</li>
-<li>Better support for server-side rendering - <a href="https://github.com/facebook/react-page">react-page</a> has helped improve the stability for server-side rendering.</li>
-<li>Made it possible to use React in environments enforcing a strict <a href="https://developer.mozilla.org/en-US/docs/Security/CSP/Introducing_Content_Security_Policy">Content Security Policy</a>. This also makes it possible to use React to build Chrome extensions.</li>
-</ul>
-<h3><a class="anchor" name="react-with-addons-new"></a>React with Addons (New!) <a class="hash-link" href="#react-with-addons-new">#</a></h3>
-<ul>
-<li>Introduced a separate build with several &quot;addons&quot; which we think can help improve the React experience. We plan to deprecate this in the long-term, instead shipping each as standalone pieces. <a href="/react/docs/addons.html">Read more in the docs</a>.</li>
-</ul>
-<h3><a class="anchor" name="jsx"></a>JSX <a class="hash-link" href="#jsx">#</a></h3>
-<ul>
-<li>No longer transform <code>class</code> to <code>className</code> as part of the transform! This is a breaking change - if you were using <code>class</code>, you <em>must</em> change this to <code>className</code> or your components will be visually broken.</li>
-<li>Added warnings to the in-browser transformer to make it clear it is not intended for production use.</li>
-<li>Improved compatibility for Windows</li>
-<li>Improved support for maintaining line numbers when transforming.</li>
-</ul>
-
-        </div>
       </div>
     
 
     <div class="pagination">
       
-        <a href="/react//blog/page2/" class="previous">
+        <a href="/react/blog/page2/" class="previous">
           &laquo; Previous Page
         </a>
       
@@ -520,13 +508,52 @@ Is this some sort of template language? Specifically no. This might have been th
 </section>
 
 
-    <footer class="wrap">
-      <div class="left">A Facebook &amp; Instagram collaboration.</div>
-      <div class="right">&copy; 2014 Facebook Inc.</div>
-    </footer>
-  </div>
-  <div id="fb-root"></div>
+    <footer class="nav-footer">
+  <section class="sitemap">
+    <a href="/react/" class="nav-home">
+    </a>
+    <div>
+      <h5><a href="/react/docs/">Docs</a></h5>
+      <a href="/react/docs/hello-world.html">Quick Start</a>
+      <a href="/react/docs/thinking-in-react.html">Thinking in React</a>
+      <a href="/react/tutorial/tutorial.html">Tutorial</a>
+      <a href="/react/docs/jsx-in-depth.html">Advanced Guides</a>
+    </div>
+    <div>
+      <h5><a href="/react/community/support.html">Community</a></h5>
+      <a href="http://stackoverflow.com/questions/tagged/reactjs" target="_blank">Stack Overflow</a>
+      <a href="https://discuss.reactjs.org/" target="_blank">Discussion Forum</a>
+      <a href="https://discord.gg/0ZcbPKXt5bZjGY5n" target="_blank">Reactiflux Chat</a>
+      <a href="https://www.facebook.com/react" target="_blank">Facebook</a>
+      <a href="https://twitter.com/reactjs" target="_blank">Twitter</a>
+    </div>
+    <div>
+      <h5><a href="/react/community/support.html">Resources</a></h5>
+      <a href="/react/community/conferences.html">Conferences</a>
+      <a href="/react/community/videos.html">Videos</a>
+      <a href="https://github.com/facebook/react/wiki/Examples" target="_blank">Examples</a>
+      <a href="https://github.com/facebook/react/wiki/Complementary-Tools" target="_blank">Complementary Tools</a>
+    </div>
+    <div>
+      <h5>More</h5>
+      <a href="/react/blog/">Blog</a>
+      <a href="https://github.com/facebook/react" target="_blank">GitHub</a>
+      <a href="http://facebook.github.io/react-native/" target="_blank">React Native</a>
+      <a href="/react/acknowledgements.html">Acknowledgements</a>
+    </div>
+  </section>
+  <a href="https://code.facebook.com/projects/" target="_blank" class="fbOpenSource">
+    <img src="/react/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/>
+  </a>
+  <section class="copyright">
+    Copyright © 2017 Facebook Inc.
+  </section>
+</footer>
 
+  </div>
+
+  <div id="fb-root"></div>
+  <script src="/react/js/anchor-links.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -541,9 +568,15 @@ Is this some sort of template language? Specifically no. This might have been th
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=623268441017527";
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=623268441017527";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    docsearch({
+      apiKey: '36221914cce388c46d0420343e0bb32e',
+      indexName: 'react',
+      inputSelector: '#algolia-doc-search'
+    });
   </script>
 </body>
 </html>

@@ -1,19 +1,4 @@
-/**
- * @jsx React.DOM
- */
+var name = Math.random() > 0.5 ? 'Jane' : 'John';
+var HELLO_COMPONENT = ('\nclass HelloMessage extends React.Component {\n  render() {\n    return <div>Hello {this.props.name}</div>;\n  }\n}\n\nReactDOM.render(<HelloMessage name="' + name + '" />, mountNode);\n').trim();
 
-var HELLO_COMPONENT = "\
-/** @jsx React.DOM */\n\
-var HelloMessage = React.createClass({\n\
-  render: function() {\n\
-    return <div>Hello {this.props.name}</div>;\n\
-  }\n\
-});\n\
-\n\
-React.renderComponent(<HelloMessage name=\"John\" />, mountNode);\
-";
-
-React.renderComponent(
-  ReactPlayground( {codeText:HELLO_COMPONENT} ),
-  document.getElementById('helloExample')
-);
+ReactDOM.render(React.createElement(ReactPlayground, { codeText: HELLO_COMPONENT }), document.getElementById('helloExample'));
